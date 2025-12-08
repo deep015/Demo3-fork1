@@ -10,6 +10,6 @@ For some more information on how to fork a repository, check out our guide,
 
 [Working with Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks)
 
-[Forking Projects]([https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks). Thanks! :sparkling_heart:
+Thanks! :sparkling_heart:
 
 Can't put in a [weblink](https://google.com)
