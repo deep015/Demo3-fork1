@@ -8,7 +8,7 @@ After forking this repository, you can make some changes to the project, and sub
 
 For some more information on how to fork a repository, check out our guide, 
 
-[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks)
+[Working with Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks)
 
 [Forking Projects]([https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks). Thanks! :sparkling_heart:
 
