@@ -8,11 +8,26 @@
   </head>
 
   <body>
+    <button class="theme-toggle">Toggle Theme</button>
     <img src="forkit.gif" id="octocat" alt="" />
 
     <!-- Feel free to change this text here -->
     <!-- new comment -->
     <!-- another new comment -->
     <p>Fork me? Fork you, @octocat!</p>
+
+    <script>
+      function setUpPageThemeToggle(body) {
+        const themeToggle = body.querySelector(".theme-toggle");
+
+        themeToggle.addEventListener("click", togglePageTheme);
+
+        function togglePageTheme() {
+          body.classList.toggle("dark");
+        }
+      }
+
+      setUpPageThemeToggle(document.querySelector("body"));
+    </script>
   </body>
 </html>
