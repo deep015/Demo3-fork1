@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Spoon-Knife</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
+    <button class="theme-toggle">Toggle Theme</button>
+    <img src="forkit.gif" id="octocat" alt="" />
 
-<img src="forkit.gif" id="octocat" alt="" />
+    <!-- Feel free to change this text here -->
+    <!-- new comment -->
+    <!-- another new comment -->
+    <p>Fork me? Fork you, @octocat!</p>
 
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
+    <script>
+      function setUpPageThemeToggle(body) {
+        const themeToggle = body.querySelector(".theme-toggle");
 
-</body>
+        themeToggle.addEventListener("click", togglePageTheme);
+
+        function togglePageTheme() {
+          body.classList.toggle("dark");
+        }
+      }
+
+      setUpPageThemeToggle(document.querySelector("body"));
+    </script>
+  </body>
 </html>
