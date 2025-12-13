@@ -1,0 +1,25 @@
+[
+{
+  "id": "0001",
+  "type": "donut",
+  "name": "Cake",
+  "image": {
+    "url": "images/0001.jpg",
+    "width": 200,
+    "height": 200
+  },
+  "tags": ["sweet", "dessert", "chocolate"]
+
+},
+{
+  "id": "0002",
+  "type": "donut",
+  "name": "Glazed",
+  "image": {
+    "url": "images/0002.jpg",
+    "width": 100,
+    "height": 100
+  },
+  "tags": ["sweet", "dessert", "glazed"]
+}
+]
