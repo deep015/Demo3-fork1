@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composite Materials Store</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: white; padding: 1rem; text-align: center; }
+        nav { background-color: #444; padding: 0.5rem; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; }
+        section { padding: 2rem; }
+        .product { margin-bottom: 2rem; border: 1px solid #ddd; padding: 1rem; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Composite Materials Store</h1>
+        <p>Your source for high-quality carbon fiber, glass fiber, and more.</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>We specialize in composite materials for aerospace, automotive, marine, and DIY projects. Browse our selection below.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        
+        <div class="product">
+            <h3>Carbon Fiber</h3>
+            <p>High-strength, lightweight carbon fiber fabrics for advanced composites. Available in various weaves and weights.</p>
+            <p>Price: Starting at $50 per yard.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Glass Fiber</h3>
+            <p>Durable glass fiber mats and fabrics, ideal for cost-effective reinforcement in resins.</p>
+            <p>Price: Starting at $20 per yard.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Kevlar Fabric</h3>
+            <p>Ballistic-grade Kevlar for impact-resistant applications, used in protective gear and composites.</p>
+            <p>Price: Starting at $100 per yard.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Epoxy Resin</h3>
+            <p>High-performance epoxy resins for laminating and bonding composite materials. Includes hardeners.</p>
+            <p>Price: Starting at $30 per gallon.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Vacuum Kit</h3>
+            <p>Complete vacuum bagging kits for resin infusion, including bags, pumps, and seals.</p>
+            <p>Price: Starting at $200.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Infusion Kit</h3>
+            <p>Tools and materials for resin infusion processes, ensuring even distribution and minimal waste.</p>
+            <p>Price: Starting at $150.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Carbon Fiber Sheet</h3>
+            <p>Pre-preg or dry carbon fiber sheets in various thicknesses for easy layering.</p>
+            <p>Price: Starting at $40 per sheet.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Glass Fiber Sheet</h3>
+            <p>Pre-cut glass fiber sheets for quick assembly in composite projects.</p>
+            <p>Price: Starting at $15 per sheet.</p>
+        </div>
+        
+        <div class="product">
+            <h3>Carbon Fiber Tube</h3>
+            <p>Lightweight carbon fiber tubes in various diameters and lengths, perfect for structural applications.</p>
+            <p>Price: Starting at $25 per foot.</p>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <p>Contact us: Email - info@compositematerials.com | Phone - (123) 456-7890</p>
+        <p>&copy; 2023 Composite Materials Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
