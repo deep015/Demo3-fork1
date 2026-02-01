@@ -1,4 +1,4 @@
-### Well hello there!
+### Well hello there! Forked and edited as part of GitHub Assignment 2
 
 This repository is meant to provide an example for *forking* a repository on GitHub.
 
