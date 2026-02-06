@@ -1,8 +1,8 @@
 ### Well hello there!
 
 DAVID WAS HERE 
-AGAIN
-AGAIN
+AGAIN 
+AGAIN deleted
 
 This repository is meant to provide an example for *forking* a repository on GitHub.
 
