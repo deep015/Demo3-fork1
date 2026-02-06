@@ -1,0 +1,1 @@
+locals { demo_asset = "www.cloudflare.com" }
