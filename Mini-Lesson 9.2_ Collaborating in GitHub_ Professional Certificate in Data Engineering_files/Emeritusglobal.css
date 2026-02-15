@@ -1,0 +1,528 @@
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@import url(https://resources.student.emeritus.org/sh/cloud_global_v1.css);
+@import url(https://resources.student.emeritus.org/sh/sh-design-themes-payload_v1.css);
+
+
+.sh details{
+	margin-bottom: 10px;
+}
+.sh details > summary { background: grey;
+	padding: 10px;
+	color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.sh details[open] > summary { background: #000000; }
+	
+.sh details > summary:hover { background: #000000; }
+	
+.sh details[open] > div{
+	border: 1px solid #F5F5F5;
+	border-radius: 5px; 
+	cursor: pointer;
+	padding:10px;
+	padding-left:15px;
+}
+
+@media screen and (min-width: 1100px) {
+  
+#kl_wrapper_3.kl_basic_color #kl_navigation {
+  width: 100%;
+  margin: 0;
+}
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li {
+  font-weight: 400;
+  list-style-type: none;
+  background-color: #0f2439;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+}
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li .dp-icon,
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li i {
+  margin-right: 10px;
+}
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li a {
+  display: block;
+  padding: 5px 22px 5px 10px;
+  border-bottom: 3px solid #fff;
+}
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li a,
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li a:focus,
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li a:hover,
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li a:visited {
+  color: #fff;
+  display: block;
+}
+#kl_wrapper_3.kl_basic_color #kl_navigation > ul li:last-child {
+  background-image: none;
+}
+#kl_wrapper_3.kl_basic_color #kl_navigation a.file_download_btn {
+  top: -5px;
+  right: 5px;
+}
+#kl_wrapper_3.kl_basic_color_panel_nav #kl_navigation a.file_download_btn {
+  top: 5px;
+  left: -5px;
+  width: 25px;
+}
+@media screen and (min-width: 500px) {
+  
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li {
+    display: block;
+    padding: 0;
+    border: none;
+    width: 50%;
+    float: left;
+    background-image: url(https://resources.student.emeritus.org/self-hosted/divider.png);
+    background-repeat: no-repeat;
+    background-position: 100% top;
+  }
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:nth-child(2n) {
+    background-image: none;
+  }
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li
+    a {
+    padding: 3px 10px;
+  }
+}
+@media screen and (min-width: 850px) {
+  body.course-menu-expanded #kl_wrapper_3.kl_basic_color #kl_navigation > ul {
+    border: none;
+    padding-bottom: 0;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+  }
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li {
+    background-image: none;
+    display: block;
+    padding: 0;
+    border: none;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    background-image: url(https://resources.student.emeritus.org/self-hosted/divider.png);
+    background-repeat: no-repeat;
+    background-position: 100% top;
+  }
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:last-child,
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:nth-child(2n) {
+    background-image: none;
+  }
+  body #kl_wrapper_3.kl_basic_color #kl_navigation > ul li a {
+    border-left: none;
+  }
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li
+    a {
+    padding: 3px 10px;
+  }
+}
+@media screen and (min-width: 980px) {
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul {
+    border: none;
+    padding-bottom: 0;
+    overflow: hidden;
+    float: none;
+  }
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li {
+    display: block;
+    padding: 0;
+    border: none;
+    width: 25%;
+  }
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li,
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:nth-child(2n) {
+    background-image: url(https://resources.student.emeritus.org/self-hosted/divider.png);
+    background-repeat: no-repeat;
+    background-position: 100% top;
+  }
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:last-child,
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:last-child {
+    background-image: none;
+  }
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li
+    a {
+    padding: 3px 10px;
+    border-left: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  body.course-menu-expanded #kl_wrapper_3.kl_basic_color #kl_navigation > ul {
+    display: table;
+    table-layout: fixed;
+  }
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:nth-child(2n),
+  body:not(.course-menu-expanded)
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li {
+    background-image: url(https://resources.student.emeritus.org/self-hosted/divider.png);
+    background-repeat: no-repeat;
+    background-position: 100% top;
+  }
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li:last-child {
+    background-image: none;
+  }
+  body.course-menu-expanded
+    #kl_wrapper_3.kl_basic_color
+    #kl_navigation
+    > ul
+    li {
+    display: table-cell;
+    padding: 0;
+    border: none;
+    width: 100%;
+    float: none;
+  }
+}
+#kl_wrapper_3.kl_basic_color_panel_nav #kl_navigation > ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+#kl_wrapper_3.kl_basic_color_panel_nav #kl_navigation > ul li a .dp-icon,
+#kl_wrapper_3.kl_basic_color_panel_nav #kl_navigation > ul li a i {
+  margin-right: 10px;
+}
+#kl_wrapper_3.kl_basic_color_panel_nav #kl_navigation > ul li a {
+  padding: 3px 0;
+  display: block;
+}
+
+/*********************************************************************/
+/***** BEGIN OF ACCORDIAN CSS *************************/
+/*********************************************************************/
+
+
+#kl_wrapper_3, #kl_wrapper, .kl_wrapper, .kl_wrapper_parent {max-width: 1100px;}
+/* New discussion user content is a span not a div */
+.kl_wrapper_parent {display: block;}
+
+/* Accordions/Expander in content */
+.kl_custom_accordion.ui-accordion .ui-accordion-header,
+.kl_panels_expander.ui-accordion .ui-accordion-header,
+.kl_panels_accordion.ui-accordion .ui-accordion-header,
+#kl_wrapper_3 .kl_custom_accordion.ui-accordion .ui-accordion-header,
+#kl_wrapper_3 .kl_panels_expander.ui-accordion .ui-accordion-header,
+#kl_wrapper_3 .kl_panels_accordion.ui-accordion .ui-accordion-header{ padding: 0; margin: 5px 0 2px; font-weight: bold; font-size: 1.3em; }
+.kl_custom_accordion.ui-accordion .ui-accordion-header a,
+.kl_panels_expander.ui-accordion .ui-accordion-header a,
+.kl_panels_accordion.ui-accordion .ui-accordion-header a,
+#kl_wrapper_3 .kl_custom_accordion.ui-accordion .ui-accordion-header a,
+#kl_wrapper_3 .kl_panels_expander.ui-accordion .ui-accordion-header a,
+#kl_wrapper_3 .kl_panels_accordion.ui-accordion .ui-accordion-header a { padding: 10px; padding-left:30px; text-decoration: none !important;}
+.kl_custom_accordion.ui-accordion .ui-accordion-header .ui-icon,
+.kl_panels_expander.ui-accordion .ui-accordion-header .ui-icon,
+.kl_panels_accordion.ui-accordion .ui-accordion-header .ui-icon{ left: 5px; }
+.kl_custom_accordion, 
+.kl_panels_accordion, 
+#kl_wrapper_3 .custom-tabs { margin-top: 20px;}
+.kl_panel_content {overflow: hidden;}
+.kl_panels_wrapper.ui-accordion .ui-accordion-content { padding: 10px; clear: both; top: -2px; margin-bottom: 0;}
+#kl_wrapper_3 .ui-accordion .ui-accordion-header .ui-icon{ left: 0; }
+#kl_wrapper_3 .ui-widget {font-size: 16px; font-size: 1rem; }
+#kl_wrapper_3 .kl_panels_dates {display: none;}
+.kl_mce_visual_blocks #kl_wrapper_3 .kl_panels_dates {display: inline-block; float: right;}
+
+
+
+#kl_theme_dropdown {background: #EAEAEA; color: #fff; padding: 3px; margin: 0 0 10px; overflow: hidden; border: 1px solid #CCC9C9;}
+#kl_theme_dropdown ul {list-style: none; margin: 0;}
+#kl_theme_dropdown ul li {float: left;}
+#kl_theme_dropdown a {height: 62px; display:inline-block; margin: 2px;}
+#kl_theme_dropdown a.removeCookies {height: 41px; width: 41px; background: #fff; border: 1px solid; border-radius: 3px; text-align: center; line-height: 15px; padding: 10px;}
+#kl_theme_dropdown a.removeCookies i {font-size: 18px; color: rgb(213, 38, 38);}
+#kl_theme_dropdown a.removeCookies .dp-icon {font-size: 18px; color: rgb(213, 38, 38);}
+#kl_theme_dropdown img {height: 60px; width: auto; border: 1px solid #C2C2C2; border-radius: 3px;}
+
+
+
+#kl_wrapper_3.kl_apple.kl_show_title #kl_banner {position:relative; margin: 5px 0; }
+#kl_wrapper_3.kl_apple p {margin: 5px 0; font-size: 16px; }
+#kl_wrapper_3.kl_apple > div {margin: 30px 0; overflow-x: auto; }
+#kl_wrapper_3.kl_apple > div > i:before {font-size: 25px; line-height: 40px; }
+#kl_wrapper_3.kl_apple > div > i {background-color: #4E6173; border-radius: 5px; color: #fff; display: block; float: left; font-size: 25px; height: 40px; line-height: 36px; margin: 0 10px 10px 0; text-align: center; width: 40px; }
+#kl_wrapper_3.kl_apple > div > .dp-icon:before {font-size: 25px; line-height: 40px; }
+#kl_wrapper_3.kl_apple > div > .dp-icon {background-color: #4E6173; border-radius: 5px; color: #fff; display: block; float: left; font-size: 25px; height: 40px; line-height: 36px; margin: 0 10px 10px 0; text-align: center; width: 40px; }
+#kl_wrapper_3.kl_apple h3:not(.ui-state-default) i:before {font-size: 20px; line-height: 36px; }
+#kl_wrapper_3.kl_apple h3:not(.ui-state-default) i {float: left; margin: 0 5px 0 0; width: 30px; font-size: 25px; color: #fff; line-height: 36px; }
+#kl_wrapper_3.kl_apple h3:not(.ui-state-default) .dp-icon:before {font-size: 20px; line-height: 36px; }
+#kl_wrapper_3.kl_apple h3:not(.ui-state-default) .dp-icon {float: left; margin: 0 5px 0 0; width: 30px; font-size: 25px; color: #fff; line-height: 36px; }
+#kl_wrapper_3.kl_apple #kl_banner {position:relative; margin: 5px 0; }
+#kl_wrapper_3.kl_apple #kl_banner h2 {line-height: 35px; border-radius: 5px; background: #0F2439; color: #fff; padding: 5px 10px 5px 2px; margin: 0 0 5px; }
+#kl_wrapper_3.kl_apple #kl_banner #kl_banner_left{float: left; height: 35px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; background-image: url(https://designtools.ciditools.com/css/images/white_apple.png); background-repeat: no-repeat; background-position: center; background-size: contain; width: 51px; text-align: center;}
+#kl_wrapper_3.kl_apple #kl_banner #kl_banner_left .kl_mod_text {display: none; }
+#kl_wrapper_3.kl_apple #kl_banner #kl_banner_left .kl_mod_num {display: block; height: 24px; color: #0F2439; font-size: 16px; font-weight: bold; padding: 8px 12px; width: 50px; text-align: center; position: relative; line-height: 20px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+#kl_wrapper_3.kl_apple #kl_banner #kl_banner_right {padding: 0px 10px; border-top-right-radius: 5px; }
+#kl_wrapper_3.kl_apple #kl_banner .kl_subtitle {font-size: 20px; text-align: center; color: #575757; border: 1px solid #575757; padding: 10px; border-radius: 5px; background-color: #f2f2f2; margin: 5px 0; }
+#kl_wrapper_3.kl_apple #kl_banner #kl_description {border: #0F2439 1px solid; padding: 10px; border-radius: 5px; font-size: 16px; }
+#kl_wrapper_3.kl_apple #kl_banner_image {margin: 5px 0; }
+#kl_wrapper_3.kl_apple #kl_banner_image img {border-radius: 5px; }
+#kl_wrapper_3.kl_apple h3:not(.ui-state-default) {margin: 0 0 20px; border: 1px solid #BDBDBD; padding: 0 10px; border-radius: 5px; background: #4E6173; color: #fff; line-height: 36px; }
+#kl_wrapper_3.kl_apple h4:not(.ui-state-default), 
+#kl_wrapper_3.kl_apple h5 {border: 1px solid #4E6173; border-radius: 5px; padding: 0 10px; clear:both;}
+#kl_wrapper_3.kl_apple #kl_navigation {width: 100%; margin: 5px 0; }
+#kl_wrapper_3.kl_apple #kl_navigation > ul {display: table; table-layout: fixed; width: 100%; background-color: #0F2439; color: #fff; overflow: hidden; margin: 5px 0; border-radius: 5px; padding: 0; }
+#kl_wrapper_3.kl_apple #kl_navigation li {display: table-cell; font-weight: normal; list-style-type: none; padding: 12px 10px 12px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+#kl_wrapper_3.kl_apple #kl_navigation > ul li:first {padding-left: 20px; }
+#kl_wrapper_3.kl_apple #kl_navigation li i {margin-right: 10px; }
+#kl_wrapper_3.kl_apple #kl_navigation li .dp-icon {margin-right: 10px; }
+#kl_wrapper_3.kl_apple #kl_navigation li a,
+#kl_wrapper_3.kl_apple #kl_navigation li a:hover,
+#kl_wrapper_3.kl_apple #kl_navigation li a:focus,
+#kl_wrapper_3.kl_apple #kl_navigation li a:visited {color: #fff; }
+#kl_wrapper_3.kl_apple #kl_modules {border: 1px solid #575757; border-radius: 5px; margin: 5px 0; }
+#kl_wrapper_3.kl_apple #kl_modules div.kl_module_content h3 {margin: 0 1% 10px; }
+
+@media screen and (min-width: 500px) {
+    body:not(.course-menu-expanded) #kl_wrapper_3.kl_apple #kl_navigation > ul {padding-bottom:0px; display: inline-block; float: left; }
+    body:not(.course-menu-expanded) #kl_wrapper_3.kl_apple #kl_navigation li {border-radius: 5px; display: inline-block; width: 44%; float: left; }
+}
+
+@media screen and (min-width: 850px) {
+    body.course-menu-expanded #kl_wrapper_3.kl_apple #kl_navigation > ul {padding-bottom:0px; display: inline-block; float: left; }
+    body.course-menu-expanded #kl_wrapper_3.kl_apple #kl_navigation li {padding: 12px 22px 12px 10px; border-radius: 5px; display: inline-block; width: 44%; float: left; }
+}
+@media screen and (min-width: 900px) {
+    body:not(.course-menu-expanded) #kl_wrapper_3.kl_apple #kl_navigation > ul {display: table; table-layout: fixed; overflow: hidden; }
+    body:not(.course-menu-expanded) #kl_wrapper_3.kl_apple #kl_navigation li {display: table-cell; padding: 12px 22px 12px 10px; width: 44%; float: none; }
+}
+@media screen and (min-width: 1100px) {
+    body.course-menu-expanded #kl_wrapper_3.kl_apple #kl_navigation > ul {display: table; table-layout: fixed; overflow: hidden; }
+    body.course-menu-expanded #kl_wrapper_3.kl_apple #kl_navigation li {display: table-cell; padding: 12px 22px 12px 10px; width: 44%; float: none; }
+}
+
+
+
+#kl_wrapper_3.kl_basic_bar #kl_banner {position:relative; margin: 0 0 10px; }
+#kl_wrapper_3.kl_basic_bar #kl_banner h2 {line-height: 35px; border-radius: 5px; background: #8F0222; color: #fff; padding: 5px 10px 5px 2px; margin: 0; }
+#kl_wrapper_3.kl_basic_bar #kl_banner #kl_banner_left{height: 40px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; padding-left: 5px; }
+#kl_wrapper_3.kl_basic_bar #kl_banner #kl_banner_left{padding-left: 5px; }
+#kl_wrapper_3.kl_basic_bar #kl_banner .kl_subtitle {font-size: 20px; text-align: center; color: #8F0222; border: 1px solid #8F0222; padding: 10px; border-radius: 5px; background-color: #fff; margin: 5px 0; }
+#kl_wrapper_3.kl_basic_bar #kl_banner #kl_description {font-size: 16px; border: 1px solid #000; padding: 10px; background-color: #fff; margin: 10px 0; border-left: none; border-right: none; }
+#kl_wrapper_3.kl_basic_bar h3:not(.ui-state-default) {text-transform: uppercase; border-bottom: 1px solid #C7C7C7; margin: 15px 0; }
+#kl_wrapper_3.kl_basic_bar h3:not(.ui-state-default) i {margin-right: 10px; }
+#kl_wrapper_3.kl_basic_bar > div > i {float:left; margin-right: 10px; font-size: 20px; }
+#kl_wrapper_3.kl_basic_bar > div > i[class*=icon-]:before,
+#kl_wrapper_3.kl_basic_bar > div > i[class^=icon-]:before {font-size: 20px; }
+#kl_wrapper_3.kl_basic_bar h3:not(.ui-state-default) .dp-icon {margin-right: 10px; }
+#kl_wrapper_3.kl_basic_bar > div > .dp-icon {float:left; margin-right: 10px; font-size: 20px; }
+#kl_wrapper_3.kl_basic_bar > div > .dp-icon[class*=icon-]:before,
+#kl_wrapper_3.kl_basic_bar > div > .dp-icon[class^=icon-]:before {font-size: 20px; }
+#kl_wrapper_3.kl_basic_bar > div {overflow-x: hidden; }
+#kl_wrapper_3.kl_basic_bar #kl_navigation li i {margin-right: 10px; }
+#kl_wrapper_3.kl_basic_bar #kl_navigation li .dp-icon {margin-right: 10px; }
+#kl_wrapper_3.kl_basic_bar #kl_navigation {margin: 5px 0; }
+#kl_wrapper_3.kl_basic_bar #kl_navigation > ul {overflow: hidden; margin: 5px 0; border-radius: 5px; width: 100%; padding: 0; }
+#kl_wrapper_3.kl_basic_bar #kl_navigation li {font-size: 1.2em; font-weight: normal; list-style-type: none; padding: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; }
+
+
+.ui-accordion .ui-accordion-header {
+  cursor: pointer;
+  position: relative;
+  margin-top: 1px;
+  zoom: 1;
+}
+.ui-accordion .ui-accordion-li-fix {
+  display: inline;
+}
+.ui-accordion .ui-accordion-header-active {
+  border-bottom: 0 !important;
+}
+.ui-accordion .ui-accordion-header a {
+  display: block;
+  font-size: 1em;
+  padding: .5em .5em .5em .7em;
+}
+/* IE7-/Win - Fix extra vertical space in lists */
+.ui-accordion a {
+  zoom: 1;
+}
+.ui-accordion-icons .ui-accordion-header a {
+  padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+  padding: 1em 2.2em;
+  border-top: 0;
+  margin-top: -2px;
+  position: relative;
+  top: 1px;
+  margin-bottom: 2px;
+  overflow: auto;
+  display: none;
+  zoom: 1;
+}
+.ui-accordion .ui-accordion-content-active {
+  display: block;
+}
+.kl_tools_wrapper.ui-accordion .ui-accordion-content {padding: 0; }
+.kl_wrapper .ui-accordion-header,
+.kl_panels_wrapper .ui-accordion-header {line-height: 1;}
+.kl_wrapper .ui-accordion-header a,
+.kl_panels_wrapper .ui-accordion-header a {font-weight: normal; }
+.kl_wrapper .ui-accordion .ui-accordion-header.ui-state-default.ui-state-active, 
+.kl_panels_wrapper.ui-accordion .ui-accordion-header.ui-state-default.ui-state-active, 
+.kl_wrapper .ui-accordion .ui-progressbar .ui-accordion-header.ui-state-default.ui-widget-header, 
+.kl_panels_wrapper.ui-accordion .ui-progressbar .ui-accordion-header.ui-state-default.ui-widget-header, 
+.kl_wrapper .ui-progressbar .ui-accordion .ui-accordion-header.ui-state-default.ui-widget-header,
+.kl_panels_wrapper.ui-progressbar .ui-accordion .ui-accordion-header.ui-state-default.ui-widget-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: var(--ic-brand-button--primary-bgd);
+    border-bottom: 1px solid var(--ic-brand-button--primary-bgd);
+    font-weight: normal;
+    font-size: 1.3em;
+    background: var(--ic-brand-button--primary-bgd);
+    color: var(--ic-brand-button--primary-bgd);
+}
+.kl_panels_wrapper .ui-state-active a, 
+.kl_panels_wrapper .ui-state-active a:link, 
+.kl_panels_wrapper .ui-state-active a:visited {
+    color: var(--ic-brand-button--primary-text);
+}
+.kl_wrapper .ui-accordion-header,
+.kl_panels_wrapper .ui-accordion-header {background: #f5f5f5; border-radius: 3px;}
+
+
+hr.dp-hr-fade-two {
+    border-width: 1px 0 0;
+    border-image: linear-gradient(90deg, rgba(135, 206, 235, 0), var(--hr-color) 50%, rgba(135, 206, 235, 0) 100%) 100% 0 0;
+    border-style: solid;
+}
+
+hr.dp-hr-fade-three {
+  height: 3px;
+  background-image: radial-gradient(closest-side, var(--hr-color), rgba(128, 128, 128, 0) 100%);
+  position: relative;
+}
+
+hr.dp-hr-pill {
+  height: 0px;
+  border-radius: 2px;
+  border: 2px solid var(--hr-color);
+  width: 80%;
+}
+
+hr.dp-hr-vertical-lines {
+    height: 4px;
+    background-image: linear-gradient(90deg, var(--hr-color), var(--hr-color) 33.33%, transparent 33.33%, transparent 100%);
+    background-size: 6px 100%;
+    width: 60%;
+}
+
+
+
+
+/*********************************************************************/
+/*****    LOAD TIME BACKGROUND COLOR FOR ACCORDIAN    *****************************************/
+
+
+
+
+/*********************************************************************/
+/***** END OF ACCORDIAN CSS *************************/
+/*********************************************************************/
+
+.kl_custom_accordion.ui-accordion .ui-accordion-header .ui-icon, .kl_panels_accordion.ui-accordion .ui-accordion-header .ui-icon, .kl_panels_expander.ui-accordion .ui-accordion-header .ui-icon {
+	
+	background-image: url(https://classroom.emeritus.org/dist/images/jqueryui/ui-icons_ffffff_256x240-ed886cdf6e.png)!important;
+}
+
+#no_annotation_warning{
+	display:none!important;
+}
+/**********Buttons LATAM version*******/
+
+span.subrayar:hover{
+    text-decoration: underline;
+}
+/*********************************************************************/
+
+
+#kl_wrapper_3 .kl_panel_heading a {
+    outline: none!important;
+}

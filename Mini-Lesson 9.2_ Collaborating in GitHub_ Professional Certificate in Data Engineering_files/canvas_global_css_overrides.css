@@ -1,0 +1,107 @@
+    .email_channels{
+	 	display:none;
+	}
+
+	.other_channels{
+		display:none;
+	}
+   
+   .aiTutor{
+      background-color: white;
+      width: 420px;
+	  max-width:100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      transition: all 0.3s ease-in-out;
+    }
+ 
+    #ai-tutor-bot{ 
+      border-left: 1px solid #E5E5E5;
+      border-right: 1px solid #E5E5E5;
+    }
+    .aiTutor.collapse {
+      width: 0;
+      opacity: 0;
+      padding: 0;
+      border: none;
+    }
+	
+	#content-wrapper h1{
+		font-size: 1.8em;
+	}		
+	#content-wrapper h2{
+		font-size: 1.8em;
+	}	
+	#content-wrapper h3{
+		font-size: 1.5em;
+	}	
+	#content-wrapper h4{
+		font-size: 18px;
+	}	
+	#content-wrapper h5{
+		font-size: 16px;
+	}
+	#content-wrapper h6{
+		font-size: 12px;
+	}
+	
+	.ic-app-nav-toggle-and-crumbs .right-of-crumbs > * {
+		margin-right: 50px;
+	}
+	
+	#chat-container{
+		z-index: 999999999!important;
+	}
+	
+	#quiz_title{
+		font-size:1.8em !important;
+	}
+	#assignment_show .title-content .title {
+		  font-size:1.8em !important;
+	}
+	
+	body:not(.full-width):not(.outcomes):not(.body--login-confirmation) .ic-Layout-wrapper {
+		max-width: 100% !important;
+	}
+
+	#not_right_side .ic-Layout-contentMain{
+		max-width: 1400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.announcements-v2__wrapper .ic-item-row__content-col h3 {
+		font-size: 1rem !important;
+	}
+	
+	#announcements_on_home_page h3{
+		font-size: 1rem !important;
+	}
+	
+	.submission_attachment .attachment_wrapper button:nth-of-type(2) {
+		display: none;
+	}
+	
+	#submit_assignment .submission_comment_textarea {
+		width: 450px;
+		height: 72px;
+		padding: 4px 6px;
+		margin-bottom: 0;
+	}
+	
+	#chat-container{
+      @media (min-width: 768px) and (max-width: 1279px) {
+        margin-left: 70px;
+        margin-top: 50px;
+      }
+      @media (max-width: 767px) {
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      @media (min-width: 1280) {
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    }
