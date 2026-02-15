@@ -1,0 +1,113 @@
+.new-nav-wrapper .slim-version .slim-nav-ul-wrapper{
+    padding: 15px !important;
+  }
+
+  .new-nav-wrapper .slim-version .school-logo{
+    width: 60px;
+	height:auto;
+  }
+
+  .new-nav-wrapper .slim-version .user-profile-pic{
+    width: 25px;
+  }
+
+  .new-nav-wrapper .menu ul:first-of-type {
+    padding: 15px;
+    margin-left: 13px;
+    z-index: -9999;
+  }
+  
+  .new-nav-wrapper .slim-version .slim-nav-ul-wrapper .menu--item .menu-holder .icon-2x{
+	margin:0 auto;
+	}
+
+  .new-nav-wrapper .menu ul:last-of-type {
+    margin-top: auto;
+    background-color: #fff;
+    z-index: -9999;
+    padding: 15px;
+    margin-left: 15px;
+  }
+
+  .new-nav-wrapper .menu-holder {
+    position: relative !important;
+  }
+
+  .slim-version ul li .menu--item a .menu-holder {
+    padding: 0px !important;
+  }
+
+  .new-nav-wrapper .menu ul li .menu--item a {
+    text-decoration: none;
+  }
+
+  .module_nav_wrapper .side-col{
+   /* padding-top: 36px;*/
+  }
+
+  .new-nav-wrapper .slim-version {
+    border-right: 1px solid #e5e5e5;
+    background: white;
+    width: 83px;
+    position: relative;
+    height: 100vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .new-nav-wrapper .slim-version li {
+    position: relative;
+  }
+
+  .new-nav-wrapper .slim-version .tooltip {
+    position: fixed !important;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    white-space: nowrap;
+    transform: translateX(20px);
+  }
+
+  .new-nav-wrapper .slim-version .tooltip--content {
+    min-height: 35px;
+    padding: 8px 12px;
+  }
+
+  .new-nav-wrapper .slim-version .tooltip--content--item::after {
+    z-index: 1;
+  }
+
+  .new-nav-wrapper .slim-version li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    color: #ffffff;
+  }
+
+  .new-nav-wrapper .slim-version ul:first-of-type {
+    padding: 15px;
+    max-height: calc(100vh - 180px);
+    overflow-y: scroll;
+    top: 60px;
+     @media (max-width:576px) {
+       top: 15%;
+     }
+  }
+
+  .new-nav-wrapper .slim-version ul:last-of-type {
+	position: fixed;
+    bottom: 0px !important;
+    z-index: 1;
+  }
+  
+@media (max-width: 991px) {
+        #launcher{
+            left: 10px !important;
+			bottom: 80px !important;
+        }
+}
+@media (min-width: 992px) {        
+        #launcher{
+                left: 470px !important;
+				bottom: 10px !important;
+        }
+}
