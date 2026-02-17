@@ -12,10 +12,9 @@ paths:
 
 commands:
   format:
-    - node -e "console.log('format not configured for pilot')"
+    - sh -c "if rg -n '\\r$' --glob '*.md' .; then echo 'CRLF line endings found in markdown files'; exit 1; else echo 'markdown line endings normalized'; fi"
   lint:
-    - node -e "console.log('lint not configured for pilot')"
-  typecheck:
-    - node -e "console.log('typecheck not configured for pilot')"
+    - sh -c "if rg -n '[[:blank:]]+$' --glob '*.md' .; then echo 'Trailing whitespace found in markdown files'; exit 1; else echo 'markdown trailing whitespace check passed'; fi"
+  typecheck: []
   test:
-    - node -e "console.log('test not configured for pilot')"
+    - node -e "['.forge.yml','CONTRIBUTING.md','.github/pull_request_template.md','.github/workflows/markdownlint.yml','docs/tickets'].forEach((p)=>require('node:fs').accessSync(p)); console.log('pilot baseline files present')"
