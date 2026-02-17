@@ -1,0 +1,21 @@
+version: 0.1
+
+repo:
+  default_branch: main
+
+paths:
+  docs_root: docs
+  tickets_root: docs/tickets
+  protected:
+    - .github/workflows/**
+    - .github/CODEOWNERS
+
+commands:
+  format:
+    - node -e "console.log('format not configured for pilot')"
+  lint:
+    - node -e "console.log('lint not configured for pilot')"
+  typecheck:
+    - node -e "console.log('typecheck not configured for pilot')"
+  test:
+    - node -e "console.log('test not configured for pilot')"
