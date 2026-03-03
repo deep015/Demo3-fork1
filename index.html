@@ -1,20 +1,109 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spoon-Knife</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#octocat {
+    width: 150px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+#octocat:hover {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<img src="forkit.gif" id="octocat" alt="" />
+<div class="container">
+    <img src="forkit.gif" id="octocat" alt="Octocat">
 
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
+    <h1>Spoon & Knife</h1>
+
+    <p>
+        Fork me? Fork you, @octocat!  
+        Let’s build something awesome together.
+    </p>
+
+    <a href="#" class="button">Fork This Project</a>
+</div>
 
 </body>
 </html>
