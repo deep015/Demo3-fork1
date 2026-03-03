@@ -1,0 +1,21 @@
+name: CI Pipeline
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Exibir mensagem de build
+        run: echo "Build executado com sucesso 🚀"
+
+      - name: Simular testes
+        run: echo "Testes rodaram com sucesso ✅"
