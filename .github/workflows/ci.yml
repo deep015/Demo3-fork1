@@ -1,0 +1,22 @@
+name: CI Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Run a one-line script
+      run: echo "Hello from Chidera's CI workflow!"
+
+    - name: Run a multi-line script
+      run: |
+        echo "Adding a basic CI check"
+        echo "This could be linting, testing, etc."
