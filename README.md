@@ -8,11 +8,10 @@ After forking this repository, you can make some changes to the project, and sub
 
 For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
 
-	---
-	## Contribuição DevOps
-	Este fork foi criado durante treinamento de DevOps para praticar:
-	- Fork de repositórios
-	- Pull Requests externos
-	- Colaboração open source
+## Contribuição DevOps
+Este fork foi criado durante treinamento de DevOps para praticar:
+- Fork de repositórios
+- Pull Requests externos
+- Colaboração open source
 
-	Contribuição feita por Willian Rocha - Turma DevOps 2025
+Contribuição feita por Willian Rocha - Turma DevOps 2025
