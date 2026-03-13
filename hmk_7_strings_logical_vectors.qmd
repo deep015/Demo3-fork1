@@ -1,0 +1,174 @@
+---
+title: "Homework 7: Strings + Logical Vectors (Graphical Perception)"
+author: "MICR 475/575"
+format:
+  html:
+    toc: true
+    embed-resources: true
+execute:
+  warning: false
+  message: false
+editor: visual
+---
+
+## Instructions
+
+In this homework you will practice:
+
+-   importing a Google Forms CSV export
+-   working with **strings**
+-   building and using **logical vectors**
+-   making data tidy with `pivot_longer()`
+-   making a simple **box plot**
+
+You will work with a Google Forms CSV export from our in-class graphical perception experiment.
+
+------------------------------------------------------------------------
+
+## Setup
+
+```{r}
+library(tidyverse)
+
+csv_path <- "(data/handb_ptest.csv)"
+```
+
+------------------------------------------------------------------------
+
+# Q1. Import the data
+
+**Task:** Read the CSV into an object called `raw`, then preview it.
+
+```{r}
+# 
+library(readr)
+
+raw <- read.csv("E:/phd/Year/Spring 2026/wee 7 assignment/r4ds_c10_to_16/data/handb_ptest.csv", na = c("N/A", ""))
+
+head(raw)
+
+```
+
+------------------------------------------------------------------------
+
+## Q2. Tidy the data (Method A: pivot_longer first, then rename question type variable)
+
+In the raw Google Forms export, the response columns have long names that include the full question text. Your goal is a tidy data frame with one row per response, and columns:
+
+-   `timestamp`
+-   `chart_type` (values like `T1`, `T2`, ..., `T9`)
+-   `percent` (numeric)
+
+**Task A:** Start from `raw`, `pivot_longer()` everything *except* `timestamp`.
+
+**Task B:** Convert the `percent` column to a number.
+
+**Task C:** Use **string operations** (and at least one **logical vector**) to convert the messy `chart_type` column into clean labels.
+
+> Hint 1: `parse_number(chart_type)` can pull the number out of the string.\
+> Hint 2: A logical vector can help you keep only the question numbers you want.
+
+**Task D:** Make a **box plot** of `percent` by `chart_type` (no log transform).
+
+```{r}
+# Load required packages
+library(tidyverse)
+library(janitor)
+
+# Import the data
+raw <- read_csv("E:/phd/Year/Spring 2026/wee 7 assignment/r4ds_c10_to_16/data/handb_ptest.csv", na = c("N/A", "")) %>%
+  clean_names()
+
+# Tidy the data
+tidy <- raw %>%
+  pivot_longer(
+    cols = -timestamp,
+    names_to = "chart_type",
+    values_to = "percent"
+  ) %>%
+  mutate(
+    percent = parse_number(percent),      
+    qnum = parse_number(chart_type),     
+    keep = qnum >= 1 & qnum <= 9          
+  ) %>%
+  filter(keep) %>%
+  mutate(chart_type = paste0("T", qnum)) %>%
+  select(timestamp, chart_type, percent)
+
+# Make the boxplot
+ggplot(tidy, aes(x = chart_type, y = percent)) +
+  geom_boxplot() +
+  labs(
+    x = "Chart Type",
+    y = "Percent",
+    title = "Percent by Chart Type"
+  ) +
+  theme_minimal()
+
+
+
+```
+
+------------------------------------------------------------------------
+
+# Q3. Tidy the data (Method B: rename columns first, then pivot_longer)
+
+This method uses the idea that (after `Timestamp`) the remaining columns are the 9 chart types, in order. The following steps provide one way this can be done - if you can get to the right answer using a different method, that's fine too!
+
+**Task A:** Create a new data frame `df` that keeps `timestamp` plus the 9 response columns.
+
+**Task B:** use the paste0() function to generate a vector of neat column headings 'T1', 'T2', etc. (keep `timestamp` as-is).
+
+**Task C:** use the function set_names() with your new vector of column names to rename your columns
+
+**Task D:** `pivot_longer()` to make a tidy data frame with `timestamp`, `chart_type`, `percent` (numeric).
+
+**Task E:** Make the same **box plot** of `percent` by `chart_type`.
+
+```{r}
+# # Task A: keep timestamp + the 9 response columns
+df <- raw %>%
+  select(timestamp, 2:10)
+
+# Task B: create vector of clean column names
+new_names <- c("timestamp", paste0("T", 1:9))
+
+# Task C: rename columns
+df <- df %>%
+  set_names(new_names)
+
+# Task D: pivot to tidy format
+tidy <- df %>%
+  pivot_longer(
+    cols = -timestamp,
+    names_to = "chart_type",
+    values_to = "percent"
+  ) %>%
+  mutate(percent = parse_number(percent))
+
+# Task E: make boxplot
+ggplot(tidy, aes(x = chart_type, y = percent)) +
+  geom_boxplot() +
+  labs(
+    x = "Chart Type",
+    y = "Percent",
+    title = "Percent by Chart Type"
+  ) +
+  theme_minimal()
+```
+
+------------------------------------------------------------------------
+
+# Q4. Do the two methods agree?
+
+**Task A:** Check that the boxplots from Q2 and Q3 are the same. It's ok if they aren't - just please comment on why they disagree
+
+If both methods cleaned the data correctly, the boxplots should look identical because they are simply different ways of reshaping the same dataset.
+
+**Task B:** In 3–6 sentences, comment on what the box plots show. Does it give the same gist that we would expect from Heer and Bostock's results? If not, why not?
+
+The pattern suggests that certain visual encodings communicate quantitative information more clearly than others. This generally aligns with the findings of Heer and Bostock, who showed that some chart types allow people to judge proportions more accurately. However, small differences may occur because the class dataset likely has fewer participants and more variability than the original experiment.
+
+```{r}
+# YOUR CODE HERE
+```
