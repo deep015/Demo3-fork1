@@ -1,0 +1,6 @@
+This file was added by a LangChain agent using two MCP servers:
+  - @modelcontextprotocol/server-github  (forked the repo, will create PR)
+  - git_server.py (custom Python MCP)    (cloned, branched, wrote this file, committed)
+
+Contributor : jayakishor
+Branch      : feature/mcp-agent-contribution
