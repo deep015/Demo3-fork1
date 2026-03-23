@@ -1,11 +1,16 @@
+:root {
+  --color1: #777;
+  --color2: #bbb;
+}
+
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #octocat {
   display: block;
-  width:384px;
+  width: 384px;
   margin: 50px auto;
 }
 
@@ -13,5 +18,21 @@ p {
   display: block;
   width: 400px;
   margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 30px Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  color: #000;
+  text-shadow: 3px 0 1px var(--color1), 6px 0 2px var(--color2);
+  animation: crosseyed 2s infinite;
+}
+
+@keyframes crosseyed {
+
+  0%,
+  100% {
+    text-shadow: 3px 0 1px var(--color1), 6px 0 2px var(--color2);
+  }
+
+  50% {
+    text-shadow: -3px 0 1px var(--color1), -6px 0 2px var(--color2);
+  }
+
 }
