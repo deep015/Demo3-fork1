@@ -1,4 +1,16 @@
-### Well hello there!
+<div id="octocat">
+  <img src="https://octodex.github.com/images/NUX_Octodex.gif" alt="Octocat Image">
+</div>
+
+<p>
+  Ready to team up? Let's collaborate, @octocat!
+</p>### Well hel<div id="octocat">
+  <img src="https://octodex.github.com/images/NUX_Octodex.gif" alt="Octocat Image">
+</div>
+
+<p>
+  Ready to team up? Let's collaborate, @octocat!
+</p>lo there!
 
 This repository is meant to provide an example for *forking* a repository on GitHub.
 
