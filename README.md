@@ -14,4 +14,4 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 	- Pull Requests externos
 	- Colaboração open source
 
-	Contribuição feita por Glauco Roschel - Turma DevOps 2025
+	Contribuição feita por Glauco A Roschel - Turma DevOps 2025
