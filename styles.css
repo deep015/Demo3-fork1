@@ -9,9 +9,16 @@
   margin: 50px auto;
 }
 
-p {
+p, blockquote {
   display: block;
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+
+blockquote {
+  border-left: 5px solid #ccc;
+  padding-left: 20px;
+  color: #666;
 }
