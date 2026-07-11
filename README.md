@@ -1,4 +1,4 @@
-### Well hello there!
+### Well hello there! (edited by hyun39 — GitHub for Next-Generation Coders 실습)
 
 This repository is meant to provide an example for *forking* a repository on GitHub.
 
