@@ -1,17 +1,161 @@
+:root {
+  --bg-color: oklch(0.12 0.02 250);
+  --card-bg: oklch(0.18 0.03 250 / 0.75);
+  --card-border: oklch(0.3 0.05 250 / 0.3);
+  --text-primary: oklch(0.95 0.01 250);
+  --text-secondary: oklch(0.75 0.02 250);
+  --accent-color: oklch(0.75 0.18 140); /* Beautiful lime/green accent */
+  --accent-glow: oklch(0.75 0.18 140 / 0.15);
+  --btn-bg: oklch(0.25 0.04 250);
+  --btn-hover: oklch(0.3 0.05 250);
+  --btn-text: oklch(0.95 0.01 250);
+  --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  position: relative;
+  /* Premium background gradients */
+  background-image: 
+    radial-gradient(circle at 10% 20%, oklch(0.18 0.05 290 / 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, oklch(0.18 0.05 160 / 0.3) 0%, transparent 50%);
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: 28px;
+  padding: 48px 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px oklch(0.05 0.01 250 / 0.6);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 80px oklch(0.05 0.01 250 / 0.8), 0 0 40px var(--accent-glow);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, oklch(0.75 0.18 140), oklch(0.65 0.2 200));
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, oklch(0.95 0.01 250) 30%, oklch(0.75 0.05 250));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
 }
 
 #octocat {
   display: block;
-  width:384px;
-  margin: 50px auto;
+  width: 240px;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+.card:hover #octocat {
+  transform: scale(1.06) rotate(3deg);
 }
+
+.message-section {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.message-section p:first-child {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--accent-color);
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.explanation {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 14px;
+  background-color: var(--btn-bg);
+  border: 1px solid var(--card-border);
+  color: var(--btn-text);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  border-color: oklch(0.4 0.05 250);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
