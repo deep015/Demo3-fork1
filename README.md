@@ -1,3 +1,3 @@
-## My First GitHub Contribution
+## Learning GitHub PR
 
-This is my practice contribution.
+This is my first pull request.
