@@ -13,17 +13,8 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 
 
 
-## Another Main Update
- 
-This commit exist only on the main branch.
 
+## Git Stash Practice
 
-
-
-
-<<<<<<< HEAD
-This line was added from main branch.
-=======
-Tjis file was added to the conflict-practice brance.
->>>>>>> conflict-practice
+This change will be stash instead of committed.
 
