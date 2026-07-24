@@ -12,11 +12,19 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 
 
 
-\## Conflict Practice
+
+## Conflict Practice
+ 
+This line was added from the main branch.
+this line was added from the conflict_practice branch.
 
 
 
 
 
+<<<<<<< HEAD
 This line was added from main branch.
+=======
+Tjis file was added to the conflict-practice brance.
+>>>>>>> conflict-practice
 
