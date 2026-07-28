@@ -13,10 +13,9 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 
 
 
-## Conflict Practice
+## Another Main Update
  
-This line was added from the main branch.
-this line was added from the conflict_practice branch.
+This commit exist only on the main branch.
 
 
 
