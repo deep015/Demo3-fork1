@@ -10,3 +10,7 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 
 This project demonstrates collaborative GitHub workflow using pull requests.
 
+This line is added for Git merge conflict demonstration.
+
+
+
