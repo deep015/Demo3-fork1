@@ -5,7 +5,7 @@
 
 #octocat {
   display: block;
-  width:384px;
+  width:356px;
   margin: 50px auto;
 }
 
@@ -14,4 +14,7 @@ p {
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+p:hover{
+  color: cornflowerblue;
 }
