@@ -1,4 +1,5 @@
-### Well hello there!
+### Feature Branch Version
+
 
 This repository is meant to provide an example for *forking* a repository on GitHub.
 
@@ -7,3 +8,11 @@ Creating a *fork* is producing a personal copy of someone else's project. Forks 
 After forking this repository, you can make some changes to the project, and submit [a Pull Request](https://github.com/octocat/Spoon-Knife/pulls) as practice.
 
 For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
+
+## Contribution
+
+This repository was updated as part of Software Engineering Lab Exercise 14.
+
+Name: Mahima
+Branch: feature-readme-update
+Date: 05-08-2026
