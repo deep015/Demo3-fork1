@@ -8,3 +8,4 @@ After forking this repository, you can make some changes to the project, and sub
 
 For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
 Updated README for Git/GitHub Collaborative Development Experiment.
+This update was made after reviewing the Pull Request.
