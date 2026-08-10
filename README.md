@@ -14,3 +14,6 @@ This README was updated as part of GitHub Lab EX14.
 
 Name: Dhushyanth Kumar V
 Department: CSE
+## Main Branch
+
+This line was updated from the main branch.
