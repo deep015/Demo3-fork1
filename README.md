@@ -14,3 +14,5 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 This change was made as part of Software Engineering Lab Experiment 14.
 
 The experiment demonstrates the fork-and-pull-request workflow using Git and GitHub.
+
+The pull request allows changes to be reviewed before they are merged into the main branch.
