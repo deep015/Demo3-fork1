@@ -1,4 +1,4 @@
-### Well hello there!
+### My first GitHub project with Codex.
 
 This repository is meant to provide an example for *forking* a repository on GitHub.
 
