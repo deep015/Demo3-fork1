@@ -10,4 +10,4 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 
 ## EX15 Collaboration
 
-This change was made directly on the MAIN branch.
+This change was made from the EX15 feature branch and merged into main.
