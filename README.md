@@ -18,3 +18,4 @@ This contribution demonstrates the GitHub fork-and-pull request workflow.
 - Demonstrated collaborative Git workflow
 
 This project demonstrates collaborative development using GitHub.
+Using a separate feature branch allows developers to work independently without affecting the main branch.
