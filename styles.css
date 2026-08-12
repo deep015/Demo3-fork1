@@ -1,6 +1,12 @@
 * {
   margin:0px;
   padding:0px;
+  background-color: black;
+  border: double;
+  border-margin: 10px;
+  border-margin-top: 20px;
+  color: white;
+
 }
 
 #octocat {
