@@ -15,3 +15,21 @@ p {
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
+
+/* Dark mode - applied when <body> has the "dark" class. */
+body {
+  background: #ffffff;
+  color: #111111;
+  transition: background 0.2s, color 0.2s;
+}
+
+body.dark {
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+button {
+  font: 16px Monaco,"Courier New",monospace;
+  padding: 8px 16px;
+  cursor: pointer;
+}
