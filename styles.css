@@ -1,8 +1,40 @@
 * {
   margin:0px;
   padding:0px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
-
+body {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  height: 400px;
+  width: 350px;
+  padding: 20px;
+  border: 2px solid #d1d1d1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.card h2 {
+  font-size: 2rem;
+  color: #d1d1d1;
+  cursor: pointer;
+}
+.card h2 .linkAddress {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+/*
 #octocat {
   display: block;
   width:384px;
@@ -15,3 +47,4 @@ p {
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
+*/
