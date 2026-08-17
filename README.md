@@ -12,5 +12,5 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 
 
 
-Experiment 15: Main branch update
 
+Experiment 15: Main branch update and conflict resolved
