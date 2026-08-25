@@ -1,0 +1,11 @@
+{
+  "name": "spoon-knife",
+  "version": "1.0.0",
+  "description": "Post-fault dispatch probe for crash recovery testing",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "devDependencies": {}
+}
