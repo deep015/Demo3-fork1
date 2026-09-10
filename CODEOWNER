@@ -1,0 +1,9 @@
+🌍 **Global Owner** — Defines the overall repository structure and rules.
+* @deep015
+📁 **Specific Directory** — Explains ownership and responsibility of each folder.
+/docs/@octo-org/documentation-team
+📄 **Specific File Extension** — Defines how different file types should be handled.
+*.js @js-mainter
+⚠️ **Critical File** — Identifies files that require extra care before modification.
+.github /workflows/@senior-dev-username
+🔗 **Dependencies & Impact** — Shows how changes affect other parts of the project.
